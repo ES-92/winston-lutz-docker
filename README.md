@@ -13,23 +13,26 @@ Dieses Projekt enthält eine Docker-Container-basierte Anwendung zur Analyse und
 
 1. **Docker und Docker Compose installieren**:
 ```bash
-   sudo apt-get update
-   sudo apt-get install -y docker.io
-   sudo systemctl start docker
-   sudo systemctl enable docker
-   sudo usermod -aG docker $USER
+sudo apt-get update
+sudo apt-get install -y docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -aG docker $USER
 ```
    
 2. **Repository klonen:**
-  ```bash
+
+```bash
 git clone https://github.com/yourusername/winston-lutz-docker.git
 cd winston-lutz-docker
-``
+```
 
 3. **Docker-Container starten:**
+
 ```bash
 sudo docker-compose up --build
 ```
+
 #### Anwendung im Browser öffnen
 http://localhost:3141
 
@@ -39,15 +42,13 @@ http://localhost:3141
 Öffne die Eingabeaufforderung oder PowerShell und führe folgende Befehle aus:
 
 ```bash
-
 git clone https://github.com/yourusername/winston-lutz-docker.git
 cd winston-lutz-docker
 ```
 
 3. **Docker-Container starten:**
 
-``bash
-
+```bash
 docker-compose up --build
 ```
 
@@ -56,25 +57,22 @@ http://localhost:3141
 
 
 ### Fehlerbehebung
+#### Docker-Dienst neu starten:
 
-   #### Docker-Dienst neu starten:
-
-    ``bash
-
+```bash
 sudo systemctl restart docker
 ```
+
 #### Logs anzeigen:
 
 ```bash
-
 docker-compose logs
 ```
 
 #### Container stoppen und entfernen:
 
 ```bash
-
-    docker-compose down
+docker-compose down
 ```
 
 ### Autor
