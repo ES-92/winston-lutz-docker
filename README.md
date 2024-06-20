@@ -12,13 +12,14 @@ Dieses Projekt enthält eine Docker-Container-basierte Anwendung zur Analyse und
 ### Auf Ubuntu
 
 1. **Docker und Docker Compose installieren**:
-   ```bash
+```bash
    sudo apt-get update
    sudo apt-get install -y docker.io
    sudo systemctl start docker
    sudo systemctl enable docker
    sudo usermod -aG docker $USER
-   ```
+```
+   
 2. **Repository klonen:**
   ```bash
 git clone https://github.com/yourusername/winston-lutz-docker.git
