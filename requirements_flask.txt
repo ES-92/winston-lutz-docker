@@ -1,0 +1,15 @@
+Flask==3.0.3
+blinker==1.8.2
+click==8.1.7
+itsdangerous==2.2.0
+Jinja2==3.1.4
+MarkupSafe==2.1.5
+Werkzeug==3.0.3
+pylinac==3.24.1
+matplotlib==3.9.0
+pydicom==2.4.4
+scipy==1.13.1
+numpy==1.26.4
+pillow==10.3.0
+reportlab==4.2.0
+pydantic==2.7.4

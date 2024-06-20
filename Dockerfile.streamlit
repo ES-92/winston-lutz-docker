@@ -1,0 +1,22 @@
+# Use the official Python image
+FROM python:3.9-slim
+
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+ENV PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the requirements file and install the dependencies
+COPY requirements_streamlit.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+# Copy the application code
+COPY . /app
+
+# Expose the port the Streamlit app runs on
+EXPOSE 3141
+
+# Run the Streamlit server
+CMD ["streamlit", "run", "client.py", "--server.port=3141", "--browser.serverAddress=0.0.0.0", "--server.enableCORS=false"]

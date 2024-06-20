@@ -1,0 +1,18 @@
+{
+    "bb_size_mm": 5.0,
+    "coll_2d_iso_diameter_mm": 2.0,
+    "couch_2d_iso_diameter_mm": 2.0,
+    "gantry_3d_iso_diameter_mm": 1.5,
+    "gantry_coll_3d_iso_diameter_mm": 2.0,
+    "max_2d_cax_to_bb_mm": 1.8,
+    "max_2d_cax_to_epid_mm": 3.0,
+    "max_coll_rms_deviation_mm": 2.0,
+    "max_couch_rms_deviation_mm": 3.0,
+    "max_epid_rms_deviation_mm": 2.0,
+    "max_gantry_rms_deviation_mm": 2.0,
+    "mean_2d_cax_to_bb_mm": 1.5,
+    "mean_2d_cax_to_epid_mm": 2.0,
+    "median_2d_cax_to_bb_mm": 1.5,
+    "median_2d_cax_to_epid_mm": 3,
+    "output_path": "/app/uploads"
+}

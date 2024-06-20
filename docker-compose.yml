@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  flask:
+    build:
+      context: .
+      dockerfile: Dockerfile.flask
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - UPLOAD_FOLDER=/app/uploads
+    networks:
+      - app-network
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+    ports:
+      - "3141:3141"
+    volumes:
+      - .:/app
+    environment:
+      - PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
