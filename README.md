@@ -23,7 +23,7 @@ sudo usermod -aG docker $USER
 2. **Repository klonen:**
 
 ```bash
-git clone https://github.com/yourusername/winston-lutz-docker.git
+git clone https://github.com/ES-92/winston-lutz-docker.git
 cd winston-lutz-docker
 ```
 
@@ -42,7 +42,7 @@ http://localhost:3141
 Öffne die Eingabeaufforderung oder PowerShell und führe folgende Befehle aus:
 
 ```bash
-git clone https://github.com/yourusername/winston-lutz-docker.git
+git clone https://github.com/ES-92/winston-lutz-docker.git
 cd winston-lutz-docker
 ```
 
